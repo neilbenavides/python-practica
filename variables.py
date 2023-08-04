@@ -1,11 +1,12 @@
-numero_decimal = 3.1416
-parte_entera = 3
-nombre = "Pi"
+decimal = 3.1416
+entero = 3
+cadena = "Pi"
 booleano = True
+nulo = None
 
-print(nombre, "es un número que relaciona la longitud de una circunferencia y su diámetro")
-print("El valor de pi es", numero_decimal)
-print("La parte entera de pi es", parte_entera)
+resultado = cadena + " es un número que relaciona la longitud de una circunferencia y su diámetro, cuyo valor es " + str(decimal) + " y su parte entera es " + str(entero)
+
+print(resultado)
 
 # En Python no hay un límite en los valore enteros que se puede representar.
 """ El límite estándar para los flotantes en Python es aproximadamente ±1.7976931348623157 x 10^308, 
@@ -15,9 +16,8 @@ pero depende básicamente de la arquitectura de la máquina."""
 
 print("ingrese un número par")
 n = int(input())
-n_adicion = n + 1
-contador = 0
+suma = 0
+for i in range(2, n + 1, 2):
+      suma+= i
 
-for n_adicion in range(2,n_adicion,2):
-      contador = contador + n_adicion
-      print("el resultado es", contador)
+print("el resultado es", suma)
